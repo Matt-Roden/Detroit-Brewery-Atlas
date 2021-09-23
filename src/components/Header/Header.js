@@ -9,7 +9,7 @@ const Header = () => {
         <li className='list-item-link'>See All</li>
         <li className='list-item-link'>About</li>
       </ul>
-      <img src={logo} alt='old english D'/>
+      <img className='d-logo' src={logo} alt='old english D'/>
     </nav>
   )
 }
