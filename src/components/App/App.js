@@ -14,6 +14,10 @@ const App = () => {
     }
   }
 
+  useEffect(() => {
+    getAllBreweries()
+  }, [])
+
   return (
     <div className="App">
       Hello World!
