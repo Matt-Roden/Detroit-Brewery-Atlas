@@ -3,6 +3,7 @@ import './App.css';
 
 const App = () => {
   const [allBreweries, setAllBreweries] = useState([])
+  const [favorites, setFavorites] = useState([])
 
   const getAllBreweries = async () => {
     try {
