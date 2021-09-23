@@ -4,3 +4,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.link-list {
+  border: solid black 3px;
+  list-style: none;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
