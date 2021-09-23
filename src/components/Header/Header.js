@@ -2,7 +2,16 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header>Header goes here!</header>
+    <nav className='nav-bar'>
+      <div className='nav-links-container'>
+        <ul className='link-list'>
+          <li className='list-item-link'>Favorites</li>
+          <li className='list-item-link'>See All</li>
+          <li className='list-item-link'>About</li>
+        </ul>
+      </div>
+      <img alt='old english D'/>
+    </nav>
   )
 }
 
