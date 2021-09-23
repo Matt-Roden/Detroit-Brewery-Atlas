@@ -1,4 +1,5 @@
 import './Header.css'
+import logo from '../../images/d_logo.png'
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
           <li className='list-item-link'>About</li>
         </ul>
       </div>
-      <img alt='old english D'/>
+      <img src={logo} alt='old english D'/>
     </nav>
   )
 }
