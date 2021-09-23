@@ -1,15 +1,26 @@
 .nav-bar {
+  /* Not going to have bgColor, will be transparent */
+  background-color: #EAE6E6;
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .link-list {
-  border: solid black 3px;
+  /* border: solid black 3px; */
   list-style: none;
-  width: 45%;
+  width: 38%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
+  margin-left: 20px;
+}
+
+.d-logo {
+  width: 30px;
+  height: 40px;
+  margin-right: 16px;
 }
