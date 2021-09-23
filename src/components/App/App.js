@@ -1,6 +1,19 @@
+import React, { useState, useEffect } from 'react'
 import './App.css';
 
-function App() {
+const App = () => {
+  const [allBreweries, setAllBreweries] = useState([])
+
+  const getAllBreweries = async () => {
+    try {
+      const response = await fetch('https://api.openbrewerydb.org/breweries?by_city=detroit')
+      const breweriesData = await response.json()
+      setAllBreweries(breweriesData)
+    } catch (err) {
+      console.log('Error: ', err)
+    }
+  }
+
   return (
     <div className="App">
       Hello World!
