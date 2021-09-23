@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {cleanData} from '../utlis'
 import './App.css';
 
 const App = () => {
