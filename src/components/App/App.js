@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Header from '../Header/Header'
 import {cleanData} from '../../utilities'
 import './App.css';
 
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      Hello World!
+      <Header />
     </div>
   );
 }
