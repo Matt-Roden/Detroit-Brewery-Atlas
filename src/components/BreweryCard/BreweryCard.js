@@ -1,11 +1,10 @@
 import './BreweryCard.css'
-import  '../../images/americanbadass.jpeg'
 
 const BreweryCard = ({ name, type, street, city, state, zip, phone, website, imageSrc }) => {
   return (
     <article className='brewery-card-container'>
       <div className='image-fav-container'>
-        <img classname='brewery-pic' src='../../images/americanbadass.jpeg' alt={`${name}`} />
+        <img classname='brewery-pic' src={imageSrc} alt={`${name}`} />
         <img classname='favoriting image' src='null' alt='favorite-icon' />
       </div>
       <div className='info-container'>

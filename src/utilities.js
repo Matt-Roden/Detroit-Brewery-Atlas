@@ -1,4 +1,4 @@
-const americanBadAss = '../../images/americanbadass.jpeg'
+const americanBadAss = 'https://res.cloudinary.com/yoroden/image/upload/v1632499420/americanbadass_qaed9c.jpg'
 const atwater = '../../images/atwater.jpeg'
 const batchBrewing = '../../images/batchbrewing.jpeg'
 const brewDetroit = '../../images/brewdetroit.jpeg'
