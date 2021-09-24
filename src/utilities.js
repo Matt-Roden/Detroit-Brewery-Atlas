@@ -12,6 +12,7 @@ const motorCityWarehouse = '../../images/motorcitybrewwarehouse.jpeg'
 const trafficJam = '../../images/trafficjam.jpeg'
 const vivios = '../../images/vivios1.jpeg'
 
+
 export const cleanData = (data) => {
   data = removeNonDetroit(data)
   return data
