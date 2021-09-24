@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Header from '../Header/Header'
-import BreweryCard from '../BreweryCard/BreweryCard'
+import AllBreweries from '../AllBreweries/AllBreweries'
 import {cleanData} from '../../utilities'
 import './App.css';
 
