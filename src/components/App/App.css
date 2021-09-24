@@ -3,3 +3,11 @@
   background-image: url('../../images/rencen_bw_ls.jpg');
   background-size: cover;
 }
+
+
+@media screen and (max-width: 425px) {
+  .App {
+    background-image: url('../../images/bwcity_and_sky_mobile.jpg');
+    background-size: cover;
+  }
+}
