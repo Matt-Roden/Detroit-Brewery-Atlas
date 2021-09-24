@@ -1,0 +1,10 @@
+.all-breweries-container {
+  margin-top: 100px;
+  width: 85%;
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  overflow-y: scroll;
+}
