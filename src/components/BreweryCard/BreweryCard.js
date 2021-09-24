@@ -5,7 +5,7 @@ const BreweryCard = ({ name, type, street, city, state, zip, phone, website, ima
     <article className='brewery-card-container'>
       <div className='image-fav-container'>
         <img className='brewery-pic' src={imageSrc} alt={`${name}`} />
-        <img className='favoriting image' src='null' alt='favorite-icon' />
+        <img className='favoriting-image' src='null' alt='favorite-icon' />
       </div>
       <div className='info-container text'>
         <h2 className='name text'>{name}</h2>

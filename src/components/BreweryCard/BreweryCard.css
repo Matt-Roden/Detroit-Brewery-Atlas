@@ -1,16 +1,20 @@
 .brewery-card-container {
   height: 300px;
   width: 250px;
+  margin: 5px;
   border: solid black 3px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  background-color: rgba(249,248,248,0.8);
 }
 
-.img-fav-container {
+.image-fav-container {
   width: 240px;
   height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .brewery-pic {
@@ -18,9 +22,9 @@
   height: 120px;
 }
 
+
 .info-container {
   border: solid red 2px;
-  background-color: rgba(131,131,131,0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
