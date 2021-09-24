@@ -7,16 +7,16 @@ const BreweryCard = ({ name, type, street, city, state, zip, phone, website, ima
         <img className='brewery-pic' src={imageSrc} alt={`${name}`} />
         <img className='favoriting image' src='null' alt='favorite-icon' />
       </div>
-      <div className='info-container'>
-        <h2>{name}</h2>
-        <h3>{`Brewery Type: ${type}`}</h3>
+      <div className='info-container text'>
+        <h2 className='name text'>{name}</h2>
+        <h3 className='type text'>{`Brewery Type: ${type}`}</h3>
         <div className='address-container'>
-          <p className='street'>{street}</p>
-          <p className='city-state'>{`${city}, ${state}`}</p>
-          <p className='zipcode'>{zip}</p>
+          <p className='street text'>{street}</p>
+          <p className='city-state text'>{`${city}, ${state}`}</p>
+          <p className='zipcode text'>{zip}</p>
         </div>
-        <h3 className='phone-number'>{phone}</h3>
-        <h3 className='website'>{website}</h3>
+        <h3 className='phone-number text'>{phone}</h3>
+        <h3 className='website text'>{website}</h3>
       </div>
     </article>
   )
