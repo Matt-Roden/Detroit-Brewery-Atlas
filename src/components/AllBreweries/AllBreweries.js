@@ -26,3 +26,5 @@ const AllBreweries = ({ allBreweriesData }) => {
     </section>
   )
 }
+
+export default AllBreweries

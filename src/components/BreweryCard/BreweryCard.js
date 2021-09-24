@@ -21,3 +21,5 @@ const BreweryCard = ({ name, type, street, city, state, zip, phone, website, ima
     </article>
   )
 }
+
+export default BreweryCard
