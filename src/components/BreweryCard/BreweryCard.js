@@ -4,8 +4,8 @@ const BreweryCard = ({ name, type, street, city, state, zip, phone, website, ima
   return (
     <article className='brewery-card-container'>
       <div className='image-fav-container'>
-        <img classname='brewery-pic' src={imageSrc} alt={`${name}`} />
-        <img classname='favoriting image' src='null' alt='favorite-icon' />
+        <img className='brewery-pic' src={imageSrc} alt={`${name}`} />
+        <img className='favoriting image' src='null' alt='favorite-icon' />
       </div>
       <div className='info-container'>
         <h2>{name}</h2>
