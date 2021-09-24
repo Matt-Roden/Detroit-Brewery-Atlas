@@ -9,16 +9,29 @@
 
 .link-list {
   list-style: none;
-  width: 40%;
+  width: 42%;
+  padding: 0;
+  margin-left: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  margin-left: 20px;
 }
 
 .d-logo {
   width: 30px;
   height: 40px;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-bar {
+    height: 100px;
+  }
+
+  .link-list {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
 }
