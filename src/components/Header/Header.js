@@ -13,7 +13,6 @@ const Header = () => {
         <li className='list-item-link'>
           <NavLink to={'/home'}>See All</NavLink>
         </li>
-        <li className='list-item-link'>About</li>
       </ul>
       <a href='https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB' target='_blank'>
         <img className='d-logo' src={logo} alt='old english D'/>
