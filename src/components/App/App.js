@@ -20,7 +20,6 @@ const App = () => {
   }
 
   const addFavorite = (brewery) => {
-    // console.log(brewery)
     let newFavorite = {
       id: brewery.id,
       key: brewery.id,
