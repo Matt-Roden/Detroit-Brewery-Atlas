@@ -15,7 +15,7 @@ const Header = () => {
         </li>
         <li className='list-item-link'>About</li>
       </ul>
-      <Link to={'/'}>
+      <Link to={'/home'}>
         <img className='d-logo' src={logo} alt='old english D'/>
       </Link>
     </nav>
