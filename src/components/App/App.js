@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import AllBreweries from '../AllBreweries/AllBreweries'
 import Favorites from '../Favorites/Favorites'
 import {cleanData} from '../../utilities'
+import { Route } from 'react-router-dom'
 import './App.css';
 
 const App = () => {
@@ -102,9 +103,20 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
 
-      <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
+      <Route exact path='/'
+        render={ () =>
+            <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
+          }
+        />
+
+
+      <Route exact path='/favorites'
+        render={ () =>
+          <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
+        }
+      />
+
     </div>
   );
 }
