@@ -10,7 +10,7 @@ const BreweryCard = ({ brewery, updateFavorites }) => {
         <img className='brewery-pic' src={brewery.image} alt={`${brewery.name}`} />
         <div className='fav-icon-wrapper'>
           <img className='favoriting-image'
-               src={notFaved}
+               src={brewery.isFavorited ? faved : notFaved}
                alt='favorite-icon'
                onClick={() => updateFavorites(brewery)}
                />
