@@ -103,20 +103,16 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-
       <Route exact path='/'
         render={ () =>
             <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
           }
         />
-
-
       <Route exact path='/favorites'
         render={ () =>
           <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
         }
       />
-
     </div>
   );
 }
