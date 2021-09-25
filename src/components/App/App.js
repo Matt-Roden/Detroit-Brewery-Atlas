@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from '../Header/Header'
 import AllBreweries from '../AllBreweries/AllBreweries'
 import Favorites from '../Favorites/Favorites'
+import LandingPage from '../LandingPage/LandingPage'
 import {cleanData} from '../../utilities'
 import { Route } from 'react-router-dom'
 import './App.css';
@@ -103,8 +104,14 @@ const App = () => {
   return (
     <div className="App">
 
+      <Route exact path='/'
+        render={() =>
+          <LandingPage />
+        }
+      />
+
       <Route exact path='/home'
-        render={ () =>
+        render={() =>
           <>
             <Header />
             <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
@@ -112,7 +119,7 @@ const App = () => {
         }
       />
       <Route exact path='/favorites'
-        render={ () =>
+        render={() =>
           <>
             <Header />
             <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
