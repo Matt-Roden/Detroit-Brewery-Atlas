@@ -9,12 +9,16 @@ describe('Home page features and functionality', () => {
     expect(true).to.equal(true)
   });
 
+  it('Should visit the correct url', () => {
+    cy.url().should('include', '/home')
+  })
+
   it('Should render a navbar with the corresponding elements', () => {
 
   })
 
   it('Should render two cards to the screen', () => {
-
+    cy.get('article').should('have.length', 2)
   })
 
   it('Should show the correct information on the cards', () => {
@@ -26,6 +30,6 @@ describe('Home page features and functionality', () => {
   })
 
   it('Should allow a user to unfavorite a brewery and change the favorite-icon back to original', () => {
-    
+
   })
 }); // end describe block
