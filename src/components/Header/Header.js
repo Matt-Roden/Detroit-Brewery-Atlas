@@ -11,7 +11,7 @@ const Header = () => {
             to={'/favorites'}>Favorites</Link>
         </li>
         <li className='list-item-link'>
-          <Link to={'/'}>See All</Link>
+          <Link to={'/home'}>See All</Link>
         </li>
         <li className='list-item-link'>About</li>
       </ul>

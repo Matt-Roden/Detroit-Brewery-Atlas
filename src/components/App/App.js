@@ -103,7 +103,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Route exact path='/'
+      <Route exact path='/home'
         render={ () =>
           <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
         }
