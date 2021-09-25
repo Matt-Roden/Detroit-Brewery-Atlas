@@ -15,9 +15,9 @@ const Header = () => {
         </li>
         <li className='list-item-link'>About</li>
       </ul>
-      <NavLink to={'/home'}>
+      <a href='https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB' target='_blank'>
         <img className='d-logo' src={logo} alt='old english D'/>
-      </NavLink>
+      </a>
     </nav>
   )
 }
