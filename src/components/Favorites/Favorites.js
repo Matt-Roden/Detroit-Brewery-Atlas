@@ -1,10 +1,22 @@
 import './Favorites.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
 
-const Favorites = ({ favoritesList }) => {
+const Favorites = ({ favoritesList, updateFavorites }) => {
+  const favoriteCards = favortiesList.map((favorite) => {
+    return (
+      <BreweryCard
+        key={favorite.id}
+        id={favorite.id}
+        brewery={favorite}
+        updateFavorites={updateFavorites}
+      />
+    )
+  })
 
   return(
-    <>Hellow World</>
+    <section className='favorites-container'>
+      {favoriteCards}
+    </section>
   )
 }
 
