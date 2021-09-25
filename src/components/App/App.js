@@ -68,8 +68,6 @@ const App = () => {
     }
   }
 
-
-
   useEffect(() => {
     getAllBreweries()
   }, [])
