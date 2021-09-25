@@ -5,20 +5,20 @@ import faved from '../../images/faved.png'
 
 const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
 
-  const decideFavoriteIconSrc = () => {
-    console.log(favoritesList, 'AM I UNDEFINED???')
-    return favoritesList.map((favorite) => {
-      if (favorite.id === brewery.id) {
-        return brewery.isFavorited = true
-      } else {
-        return brewery.isFavorited = false
-      }
-    })
-  }
-
-  useEffect(() => {
-    decideFavoriteIconSrc()
-  }, [])
+  // const decideFavoriteIconSrc = () => {
+  //   console.log(favoritesList, 'AM I UNDEFINED???')
+  //   return favoritesList.map((favorite) => {
+  //     if (favorite.id === brewery.id) {
+  //       return brewery.isFavorited = true
+  //     } else {
+  //       return brewery.isFavorited = false
+  //     }
+  //   })
+  // }
+  //
+  // useEffect(() => {
+  //   decideFavoriteIconSrc()
+  // }, [])
 
   return (
     <article className='brewery-card-container'>
