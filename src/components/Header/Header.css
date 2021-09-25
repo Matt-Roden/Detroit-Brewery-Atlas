@@ -10,7 +10,7 @@
 .link-list {
   list-style: none;
   height: 100%;
-  width: 42%;
+  width: 28%;
   padding: 0;
   margin-left: 30px;
   display: flex;
@@ -18,10 +18,21 @@
   align-items: center;
 }
 
+.list-item-link {
+  color: black;
+}
+
 .d-logo {
   width: 30px;
   height: 40px;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .link-list {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -35,5 +46,10 @@
     align-items: flex-start;
     margin-left: 25px;
     margin-bottom: 0;
+  }
+
+  .list-item-link {
+    color: black;
+    text-decoration: none;
   }
 }
