@@ -1,7 +1,10 @@
 import './AllBreweries.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
 
-const AllBreweries = ({ allBreweriesData }) => {
+const AllBreweries = ({ allBreweriesData, updateFavorites }) => {
+
+
+
   const breweryCards = allBreweriesData.map((brewery) => {
     return (
       <BreweryCard
@@ -16,6 +19,7 @@ const AllBreweries = ({ allBreweriesData }) => {
         phone={brewery.phone}
         website={brewery.website_url}
         imageSrc={brewery.image}
+        updateFavorites={updateFavorites}
       />
     )
   })

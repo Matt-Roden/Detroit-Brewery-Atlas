@@ -19,6 +19,53 @@ const App = () => {
     }
   }
 
+  const addFavorite = (brewery) => {
+    let newFavorite = {
+      id: brewery.id,
+      key: brewery.id,
+      name: brewery.name,
+      type: brewery.brewery_type,
+      street: brewery.street,
+      city: brewery.city,
+      state: brewery.state,
+      zip: brewery.postal_code,
+      phone: brewery.phone,
+      website: brewery.website_url,
+      imageSrc:, brewery.image
+    }
+    handleFavorite(brewery.id)
+
+  }
+
+  const handleFavorite = (id) => {
+    const found = allBreweries.find(brewery => brewery.id === id)
+    found.isFavorited = !found.isFavorited
+  }
+
+  const removeFavorite = () => {
+
+  }
+
+  const addToStorage = () => {
+
+  }
+
+  const removeFromStorage = () => {
+
+  }
+
+  const updateFavorites = (brewery) => {
+    let foundFavorite = favorites.find(favorite => favorite.id === brewery.id)
+
+    if (foundFavorite) {
+      removeFavorite(foundFavorite)
+    } else {
+      addFavorite(foundFavorite)
+    }
+  }
+
+
+
   useEffect(() => {
     getAllBreweries()
   }, [])
@@ -26,7 +73,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <AllBreweries allBreweriesData={allBreweries} />
+      <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites}/>
     </div>
   );
 }

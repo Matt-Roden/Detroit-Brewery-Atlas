@@ -2,13 +2,17 @@ import './BreweryCard.css'
 import notFaved from '../../images/notFaved.png'
 import faved from '../../images/faved.png'
 
-const BreweryCard = ({ name, type, street, city, state, zip, phone, website, imageSrc }) => {
+const BreweryCard = ({ name, type, street, city, state, zip, phone, website, imageSrc, updateFavorites }) => {
   return (
     <article className='brewery-card-container'>
       <div className='image-fav-container'>
         <img className='brewery-pic' src={imageSrc} alt={`${name}`} />
         <div className='fav-icon-wrapper'>
-          <img className='favoriting-image' src={notFaved} alt='favorite-icon' />
+          <img className='favoriting-image'
+               src={notFaved}
+               alt='favorite-icon'
+               onClick={() => updateFavorites(brewery)}
+               />
         </div>
       </div>
       <div className='info-container text'>
