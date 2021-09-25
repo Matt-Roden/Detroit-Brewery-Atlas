@@ -14,7 +14,7 @@ const vivios = 'https://res.cloudinary.com/yoroden/image/upload/v1632499418/vivi
 
 
 export const cleanData = (data) => {
-  cleanedData = addIsFavoritedProp(data)
+  const cleanedData = addIsFavoritedProp(data)
   return cleanedData
 }
 

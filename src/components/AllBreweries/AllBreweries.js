@@ -10,15 +10,7 @@ const AllBreweries = ({ allBreweriesData, updateFavorites }) => {
       <BreweryCard
         key={brewery.id}
         id={brewery.id}
-        name={brewery.name}
-        type={brewery.brewery_type}
-        street={brewery.street}
-        city={brewery.city}
-        state={brewery.state}
-        zip={brewery.postal_code}
-        phone={brewery.phone}
-        website={brewery.website_url}
-        imageSrc={brewery.image}
+        brewery={brewery}
         updateFavorites={updateFavorites}
       />
     )

@@ -31,7 +31,7 @@ const App = () => {
       zip: brewery.postal_code,
       phone: brewery.phone,
       website: brewery.website_url,
-      imageSrc:, brewery.image
+      imageSrc: brewery.image
     }
     handleFavorite(brewery.id)
 
