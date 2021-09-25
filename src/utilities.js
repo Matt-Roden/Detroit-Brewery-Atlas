@@ -14,8 +14,15 @@ const vivios = 'https://res.cloudinary.com/yoroden/image/upload/v1632499418/vivi
 
 
 export const cleanData = (data) => {
-  data = removeNonDetroit(data)
-  return data
+  cleanedData = addIsFavoritedProp(data)
+  return cleanedData
+}
+
+const addIsFavoritedProp = (data) => {
+const newData = data.map(breweryObj => {
+  return { ...breweryObj, isFavorited: false }
+})
+return removeNonDetroit(newData)
 }
 
 const removeNonDetroit = (data) => {
@@ -66,7 +73,6 @@ const addImages = (detroitData) => {
       return { ...breweryObj, image: vivios }
     }
   })
-
   return dataWithImages
 }
 
