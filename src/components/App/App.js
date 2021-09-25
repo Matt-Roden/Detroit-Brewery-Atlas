@@ -102,15 +102,21 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
+
       <Route exact path='/home'
         render={ () =>
-          <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
+          <>
+            <Header />
+            <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
+          </>
         }
       />
       <Route exact path='/favorites'
         render={ () =>
-          <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
+          <>
+            <Header />
+            <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
+          </>
         }
       />
     </div>
