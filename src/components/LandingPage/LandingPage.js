@@ -7,9 +7,11 @@ const LandingPage = () => {
     <section className='landing-page-container'>
       <h1 className='welcome-message'>Welcome to, Detroit - Now let's drink</h1>
 
-      <div className="btn">
-        <span>enter</span>
-      </div>
+      <Link to='/home' className='link'>
+        <div className="btn">
+          <span className='btn-text'>enter</span>
+        </div>
+      </Link>
 
     </section>
   )
