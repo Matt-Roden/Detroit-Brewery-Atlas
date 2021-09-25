@@ -43,17 +43,19 @@ const App = () => {
     const found = allBreweries.find(brewery => brewery.id === id)
     found.isFavorited = !found.isFavorited
   }
-
-  const removeFavorite = () => {
-
-  }
-
   const saveToStorage = (brewery) => {
     localStorage.setItem(brewery.id, JSON.stringify(brewery))
   }
 
-  const removeFromStorage = () => {
+  const removeFavorite = (brewery) => {
+    let breweriesToKeep = favorites.filter(favorite => favorite.id !== brewery.id)
+    setFavorites(breweriesToKeep)
+    handleFavorite(brewery.id)
+    removeFromStorage(brewery.id)
+  }
 
+  const removeFromStorage = (id) => {
+    localStorage.removeItem(id)
   }
 
   const updateFavorites = (brewery) => {
