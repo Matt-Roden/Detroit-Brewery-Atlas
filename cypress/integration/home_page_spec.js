@@ -14,6 +14,10 @@ describe('Home page features and functionality', () => {
   })
 
   it('Should render a navbar with the corresponding elements', () => {
+    cy.get('nav').find('li').contains('Favorites')
+    cy.get('nav').find('li').contains('See All')
+    cy.get('nav').find('img')
+    cy.get('img[alt="old english D"]')
 
   })
 
