@@ -1,7 +1,8 @@
 const LandingPage = () => {
   return (
     <section className='landing-page-container'>
-      Hello World
+      <h1>Welcome to, Detroit - Now let's drink</h1>
+      <button>enter</button>
     </section>
   )
 }
