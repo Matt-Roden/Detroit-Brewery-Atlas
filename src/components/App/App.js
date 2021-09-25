@@ -20,6 +20,7 @@ const App = () => {
   }
 
   const addFavorite = (brewery) => {
+    // console.log(brewery)
     let newFavorite = {
       id: brewery.id,
       key: brewery.id,
@@ -34,7 +35,8 @@ const App = () => {
       imageSrc: brewery.image
     }
     handleFavorite(brewery.id)
-
+    saveToStorage(newFavorite)
+    setFavorites([...favorites, newFavorite])
   }
 
   const handleFavorite = (id) => {
@@ -46,8 +48,8 @@ const App = () => {
 
   }
 
-  const addToStorage = () => {
-
+  const saveToStorage = (brewery) => {
+    localStorage.setItem(brewery.id, JSON.stringify(brewery))
   }
 
   const removeFromStorage = () => {
@@ -60,7 +62,7 @@ const App = () => {
     if (foundFavorite) {
       removeFavorite(foundFavorite)
     } else {
-      addFavorite(foundFavorite)
+      addFavorite(brewery)
     }
   }
 

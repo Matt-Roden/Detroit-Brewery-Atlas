@@ -3,6 +3,7 @@ import notFaved from '../../images/notFaved.png'
 import faved from '../../images/faved.png'
 
 const BreweryCard = ({ brewery, updateFavorites }) => {
+
   return (
     <article className='brewery-card-container'>
       <div className='image-fav-container'>
