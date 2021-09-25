@@ -25,15 +25,15 @@ const App = () => {
       id: brewery.id,
       key: brewery.id,
       name: brewery.name,
-      type: brewery.brewery_type,
+      brewery_type: brewery.brewery_type,
       street: brewery.street,
       city: brewery.city,
       state: brewery.state,
-      zip: brewery.postal_code,
+      postal_code: brewery.postal_code,
       phone: brewery.phone,
-      website: brewery.website_url,
-      imageSrc: brewery.imageSrc,
-      isFavorited: brewery.isFavorited
+      website_url: brewery.website_url,
+      image: brewery.image,
+      isFavorited: true
     }
     handleFavorite(brewery.id)
     saveToStorage(newFavorite)
@@ -76,20 +76,35 @@ const App = () => {
     setFavorites(favoritesInStorage)
   }
 
+  // const matchFavsWithAllData = () => {
+  //   return allBreweries.map((brewery) => {
+  //     return favorites.forEach((favorite) => {
+  //       if (favorite.id === brewery.id) {
+  //         brewery.isFavorited = true
+  //       }
+  //     })
+  //   })
+  // }
+
   useEffect(() => {
     getAllBreweries()
+    // matchFavsWithAllData()
   }, [])
 
   useEffect(() => {
     getFavoritesFromStorage()
   }, [])
 
+  useEffect(() => {
+
+  }, [])
+
   return (
     <div className="App">
       <Header />
-      <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites}/>
+      <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
 
-      <Favorites favoritesList={favorites} />
+      <Favorites favoritesList={favorites} updateFavorites={updateFavorites}/>
     </div>
   );
 }

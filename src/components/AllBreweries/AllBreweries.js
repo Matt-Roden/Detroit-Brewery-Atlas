@@ -1,7 +1,7 @@
 import './AllBreweries.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
 
-const AllBreweries = ({ allBreweriesData, updateFavorites }) => {
+const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
 
 
 
@@ -12,6 +12,7 @@ const AllBreweries = ({ allBreweriesData, updateFavorites }) => {
         id={brewery.id}
         brewery={brewery}
         updateFavorites={updateFavorites}
+        favoritesList={favoritesList}
       />
     )
   })
