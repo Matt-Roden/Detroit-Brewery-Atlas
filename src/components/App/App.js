@@ -32,7 +32,8 @@ const App = () => {
       zip: brewery.postal_code,
       phone: brewery.phone,
       website: brewery.website_url,
-      imageSrc: brewery.image
+      imageSrc: brewery.imageSrc,
+      isFavorited: brewery.isFavorited
     }
     handleFavorite(brewery.id)
     saveToStorage(newFavorite)
@@ -68,8 +69,19 @@ const App = () => {
     }
   }
 
+  const getFavoritesFromStorage = () => {
+    const favoritesInStorage = Object.keys(localStorage).map(element => {
+      return JSON.parse(localStorage.getItem(element))
+    })
+    setFavorites(favoritesInStorage)
+  }
+
   useEffect(() => {
     getAllBreweries()
+  }, [])
+
+  useEffect(() => {
+    getFavoritesFromStorage()
   }, [])
 
   return (

@@ -2,7 +2,7 @@ import './Favorites.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
 
 const Favorites = ({ favoritesList, updateFavorites }) => {
-  const favoriteCards = favortiesList.map((favorite) => {
+  const favoriteCards = favoritesList.map((favorite) => {
     return (
       <BreweryCard
         key={favorite.id}
