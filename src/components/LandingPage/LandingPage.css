@@ -5,19 +5,20 @@
 }
 
 .welcome-message {
+  margin-top: 75px;
   color: white;
 }
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 .btn-text {
-  font-style: none;
+  font-size: 20px;
 }
 
 .btn {
+  margin-top: 50px;
   line-height: 50px;
   height: 50px;
   text-align: center;
@@ -61,4 +62,32 @@ a {
 .btn:hover::after {
   opacity: 1;
   transform: scale(1,1);
+}
+
+@media screen and (max-width: 425px) {
+
+  .welcome-message {
+    margin-top: 100px;
+    color: black;
+    font-size: 20px;
+  }
+
+  .btn {
+    color: black;
+  }
+
+  .btn::before {
+    background-color: rgba(110,110,110,0.5);
+  }
+
+  .btn::after {
+    border: 1px solid rgba(110,110,110,0.8);
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .welcome-message {
+    font-size: 16px;
+  }
 }
