@@ -1,6 +1,6 @@
 beforeEach(() => {
   cy.intercept('GET', 'https://api.openbrewerydb.org/breweries?by_city=detroit', { fixture: 'breweries' }).as('breweries')
-  cy.visit('http://localhost:3000/')
+  cy.visit('http://localhost:3000/home')
 })
 
 describe('Home page features and functionality', () => {
