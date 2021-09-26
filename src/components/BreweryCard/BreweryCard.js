@@ -50,3 +50,7 @@ const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
 }
 
 export default BreweryCard
+
+BreweryCard.propTypes = {
+  brewery: PropTypes.object.isRequired
+}
