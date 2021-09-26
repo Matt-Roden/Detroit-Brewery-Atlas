@@ -1,5 +1,6 @@
 import './AllBreweries.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
+import PropTypes from 'prop-types'
 
 const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
 
