@@ -1,5 +1,4 @@
 import './BreweryCard.css'
-import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import notFaved from '../../images/notFaved.png'
 import faved from '../../images/faved.png'
