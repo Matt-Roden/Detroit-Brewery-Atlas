@@ -1,24 +1,9 @@
 import './BreweryCard.css'
-import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import notFaved from '../../images/notFaved.png'
 import faved from '../../images/faved.png'
 
-const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
-
-  // const decideFavoriteIconSrc = () => {
-  //   console.log(favoritesList, 'AM I UNDEFINED???')
-  //   return favoritesList.map((favorite) => {
-  //     if (favorite.id === brewery.id) {
-  //       return brewery.isFavorited = true
-  //     } else {
-  //       return brewery.isFavorited = false
-  //     }
-  //   })
-  // }
-  //
-  // useEffect(() => {
-  //   decideFavoriteIconSrc()
-  // }, [])
+const BreweryCard = ({ brewery, updateFavorites }) => {
 
   return (
     <article className='brewery-card-container'>
@@ -30,7 +15,7 @@ const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
                // src={ decideFavoriteIconSrc()}
                alt='favorite-icon'
                onClick={() => updateFavorites(brewery)}
-               />
+          />
         </div>
       </div>
       <div className='info-container text'>
@@ -49,3 +34,8 @@ const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
 }
 
 export default BreweryCard
+
+BreweryCard.propTypes = {
+  brewery: PropTypes.object.isRequired,
+  updateFavorites: PropTypes.func.isRequired,
+}

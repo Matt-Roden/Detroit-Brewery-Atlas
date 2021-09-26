@@ -71,18 +71,10 @@ const addImages = (detroitData) => {
     }
     if (breweryObj.name === 'Vivio\'s Food') {
       return { ...breweryObj, image: vivios }
+    } else {
+      // 👇 Refactor to call some sort of error handling function
+      return 'Sorry, no breweries matching the required conditions'
     }
   })
   return dataWithImages
 }
-
-// const cleanUrls = (data) => {
-//   const cleanedUrls = data.reduce((accArr, brewery) => {
-//     if (brewery.website_url === null) {
-//       return brewery.website_url = 'No website available 🍻'
-//     }
-//
-//     return accArr
-//   }, [])
-//   return cleanedUrls
-// }

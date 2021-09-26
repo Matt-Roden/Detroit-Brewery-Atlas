@@ -1,5 +1,6 @@
 import './Favorites.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
+import PropTypes from 'prop-types'
 
 const Favorites = ({ favoritesList, updateFavorites }) => {
 
@@ -24,3 +25,8 @@ const Favorites = ({ favoritesList, updateFavorites }) => {
 }
 
 export default Favorites
+
+Favorites.propTypes = {
+  favoritesList: PropTypes.array.isRequired,
+  updateFavorites: PropTypes.func.isRequired
+}

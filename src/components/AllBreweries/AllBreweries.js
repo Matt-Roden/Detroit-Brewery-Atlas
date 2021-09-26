@@ -1,10 +1,8 @@
 import './AllBreweries.css'
 import BreweryCard from '../BreweryCard/BreweryCard'
+import PropTypes from 'prop-types'
 
-const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
-
-
-
+const AllBreweries = ({ allBreweriesData, updateFavorites }) => {
   const breweryCards = allBreweriesData.map((brewery) => {
     return (
       <BreweryCard
@@ -12,7 +10,6 @@ const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
         id={brewery.id}
         brewery={brewery}
         updateFavorites={updateFavorites}
-        favoritesList={favoritesList}
       />
     )
   })
@@ -25,3 +22,8 @@ const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
 }
 
 export default AllBreweries
+
+AllBreweries.propTypes = {
+  allBreweriesData: PropTypes.array.isRequired,
+  updateFavorites: PropTypes.func.isRequired
+}
