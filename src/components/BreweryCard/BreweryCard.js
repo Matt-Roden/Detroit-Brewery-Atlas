@@ -16,7 +16,7 @@ const BreweryCard = ({ brewery, updateFavorites }) => {
                // src={ decideFavoriteIconSrc()}
                alt='favorite-icon'
                onClick={() => updateFavorites(brewery)}
-               />
+          />
         </div>
       </div>
       <div className='info-container text'>
