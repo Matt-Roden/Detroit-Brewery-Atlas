@@ -71,6 +71,9 @@ const addImages = (detroitData) => {
     }
     if (breweryObj.name === 'Vivio\'s Food') {
       return { ...breweryObj, image: vivios }
+    } else {
+      // 👇 Refactor to call some sort of error handling function 
+      return 'Sorry, no breweries matching the required conditions'
     }
   })
   return dataWithImages
