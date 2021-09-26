@@ -17,8 +17,8 @@ describe('Home page features and functionality', () => {
     cy.get('nav').find('li').contains('Favorites')
     cy.get('nav').find('li').contains('See All')
     cy.get('nav').find('img')
+    // try to locate the src 👇
     cy.get('img[alt="old english D"]')
-
   })
 
   it('Should render two cards to the screen', () => {
@@ -26,11 +26,17 @@ describe('Home page features and functionality', () => {
   })
 
   it('Should show the correct information on the cards', () => {
-
+    cy.get('article').find('h2').contains('Atwater Brewing Co')
+    cy.get('article').find('h3').contains('Brewery Type: regional')
+    cy.get('article').find('p').contains('237 Joseph Campau St')
+    cy.get('article').find('p').contains('Detroit, Michigan')
+    cy.get('article').find('p').contains('48207-4107')
+    cy.get('article').find('h3').contains('3138779205')
+    cy.get('article').find('a').contains('Website')
   })
 
-  it('Should allow the user to favorite breweries and change the favorite-icon', () => {
-
+  it.only('Should allow the user to favorite breweries and change the favorite-icon', () => {
+    cy.get('article').find('img').contains()
   })
 
   it('Should allow a user to unfavorite a brewery and change the favorite-icon back to original', () => {
