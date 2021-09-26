@@ -40,7 +40,7 @@ describe(' User flow and functionality for Favorites page', () => {
 
   })
 
-  it.only('Should not show the cards anymore after unfavorting them from the favorites page', () => {
+  it('Should not show the cards anymore after unfavorting them from the favorites page', () => {
     cy.get('article').find('img.favoriting-image.notFaved').click({ multiple: true })
     cy.get('nav').find('li.favorites-link').click()
     cy.url().should('includes', '/favorites')
