@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <nav className='nav-bar'>
       <ul className='link-list'>
-        <li className='list-item-link'>
+        <li className='list-item-link favorites-link'>
           <NavLink
             to={'/favorites'}>Favorites</NavLink>
         </li>
-        <li className='list-item-link'>
+        <li className='list-item-link see-all-link'>
           <NavLink to={'/home'}>See All</NavLink>
         </li>
       </ul>
