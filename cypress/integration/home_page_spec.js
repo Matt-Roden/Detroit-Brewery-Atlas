@@ -19,6 +19,15 @@ describe('Home page features and functionality', () => {
     cy.get('nav').find('img')
     // try to locate the src 👇
     cy.get('img[alt="old english D"]')
+    cy.get('a[href="https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB"]')
+      .should('have.attr', 'target', '_blank')
+  })
+
+  it('Should allow the user navigate pages using the nav elements', () => {
+    cy.get('nav').find('li').contains('Favorites').click()
+    cy.url().should('include', '/favorites')
+    cy.get('nav').find('li').contains('See All').click()
+    cy.url().should('include', '/home')
   })
 
   it('Should render two cards to the screen', () => {
@@ -35,12 +44,15 @@ describe('Home page features and functionality', () => {
     cy.get('article').find('a').contains('Website')
   })
 
-  it.only('Should allow the user to favorite breweries and change the favorite-icon', () => {
+  it('Should allow the user to favorite breweries and change the favorite-icon', () => {
     cy.get('article').find('img.favoriting-image.notFaved').click({ multiple: true })
     cy.get('article').find('img.faved').should('have.length', 2)
   })
 
   it('Should allow a user to unfavorite a brewery and change the favorite-icon back to original', () => {
-
+    cy.get('article').find('img.favoriting-image.notFaved').click({ multiple: true })
+    cy.get('article').find('img.faved').should('have.length', 2)
+    cy.get('article').find('img.favoriting-image.faved').click({ multiple: true })
+    cy.get('article').find('img.notFaved').should('have.length', 2)
   })
 }); // end describe block
