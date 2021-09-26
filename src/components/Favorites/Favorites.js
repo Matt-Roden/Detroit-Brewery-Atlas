@@ -28,4 +28,5 @@ export default Favorites
 
 Favorites.propTypes = {
   favoritesList: PropTypes.array.isRequired,
+  updateFavorites: PropTypes.func.isRequired
 }
