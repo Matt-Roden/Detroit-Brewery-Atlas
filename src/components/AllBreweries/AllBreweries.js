@@ -26,5 +26,6 @@ export default AllBreweries
 
 AllBreweries.propTypes = {
   allBreweriesData: PropTypes.array.isRequired,
-  favoritesList: PropTypes.array.isRequired
+  favoritesList: PropTypes.array.isRequired,
+  updateFavorites: PropTypes.func.isRequired
 }
