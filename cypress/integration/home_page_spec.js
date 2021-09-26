@@ -36,7 +36,8 @@ describe('Home page features and functionality', () => {
   })
 
   it.only('Should allow the user to favorite breweries and change the favorite-icon', () => {
-    cy.get('article').find('img').contains()
+    cy.get('article').find('img.favoriting-image.notFaved').click({ multiple: true })
+    cy.get('article').find('img.faved').should('have.length', 2)
   })
 
   it('Should allow a user to unfavorite a brewery and change the favorite-icon back to original', () => {
