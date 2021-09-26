@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import notFaved from '../../images/notFaved.png'
 import faved from '../../images/faved.png'
 
-const BreweryCard = ({ brewery, updateFavorites, favoritesList }) => {
+const BreweryCard = ({ brewery, updateFavorites }) => {
 
   // const decideFavoriteIconSrc = () => {
   //   console.log(favoritesList, 'AM I UNDEFINED???')
