@@ -17,7 +17,7 @@ describe('Home page features and functionality', () => {
     cy.get('nav').find('li').contains('Favorites')
     cy.get('nav').find('li').contains('See All')
     cy.get('nav').find('img')
-    // try to locate the src 👇
+    // try to locate the src 👇 unable 
     cy.get('img[alt="old english D"]')
     cy.get('a[href="https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB"]')
       .should('have.attr', 'target', '_blank')

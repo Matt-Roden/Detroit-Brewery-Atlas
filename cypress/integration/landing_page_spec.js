@@ -17,5 +17,6 @@ describe('Landing page features and functionality', () => {
   it('Should be take the user to the home page when the enter button is clicked', () => {
     cy.get('div.btn').click()
     cy.url().should('include', '/home')
+    cy.get('article').should('have.length', 2)
   });
 }); //end describe block
