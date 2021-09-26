@@ -14,7 +14,9 @@ const Header = () => {
           <NavLink to={'/home'}>See All</NavLink>
         </li>
       </ul>
-      <a href='https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB' target='_blank'>
+      <a href='https://visitmidtown.com/?gclid=Cj0KCQjwkbuKBhDRARIsAALysV7rpLcze26PbLaSM9gFpNHyGCWj04oEzDTbsNQyl9x09yVa8NwA67caAsTeEALw_wcB'
+         target='_blank'
+         rel="noreferrer">
         <img className='d-logo' src={logo} alt='old english D'/>
       </a>
     </nav>
