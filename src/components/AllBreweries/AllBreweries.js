@@ -3,9 +3,6 @@ import BreweryCard from '../BreweryCard/BreweryCard'
 import PropTypes from 'prop-types'
 
 const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
-
-
-
   const breweryCards = allBreweriesData.map((brewery) => {
     return (
       <BreweryCard
@@ -26,3 +23,8 @@ const AllBreweries = ({ allBreweriesData, updateFavorites, favoritesList }) => {
 }
 
 export default AllBreweries
+
+AllBreweries.propTypes = {
+  allBreweriesData: PropTypes.array.isRequired,
+  favoritesList: PropTypes.array.isRequired
+}
