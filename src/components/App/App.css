@@ -1,6 +1,5 @@
 .App {
   height: 100vh;
-  /* width: 100vw; */
   background-image: url('../../images/rencen_bw_ls.jpg');
   background-size: cover;
   display: flex;
@@ -18,7 +17,6 @@ a {
   color: white;
 }
 
-
 @media screen and (max-width: 425px) {
   .App {
     background-image: url('../../images/bwcity_and_sky_mobile.jpg');
@@ -33,5 +31,4 @@ a {
     color: black;
     font-size: 20px;
   }
-
 }

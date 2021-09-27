@@ -2,7 +2,6 @@
   height: 300px;
   width: 250px;
   margin: 8px;
-  /* border: solid black 3px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +45,6 @@
 }
 
 .info-container {
-  /* border: solid red 2px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +72,6 @@
 }
 
 .address-container {
-  /* border: solid blue 1px; */
   display:flex;
   flex-direction: column;
   justify-content: center;
