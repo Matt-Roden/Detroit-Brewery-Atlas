@@ -99,7 +99,7 @@ const App = () => {
         render={() =>
           <>
             <Header />
-            <h1 className='offerings-message'>Check out the local offerings...</h1>
+            <h1 className='offerings-message'>All Breweries</h1>
             <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
           </>
         }
