@@ -22,6 +22,14 @@ This project was built as a student project for The Turing School of Software & 
 - Git
 - GitHub
 
+### Screenshots:
+
+![view all](https://res.cloudinary.com/yoroden/image/upload/v1632773753/Screen_Shot_2021-09-27_at_2.14.13_PM_xdlsji.png)
+
+![favorites](https://res.cloudinary.com/yoroden/image/upload/v1632773753/Screen_Shot_2021-09-27_at_2.14.44_PM_ezeta1.png)
+
+![mobile view](https://res.cloudinary.com/yoroden/image/upload/v1632773749/Screen_Shot_2021-09-27_at_2.15.22_PM_z9s13q.png)
+
 ### Wins:
 
 - Achieveing a 100% lighthouse accessibility score.
