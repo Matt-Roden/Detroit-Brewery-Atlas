@@ -78,16 +78,6 @@ const App = () => {
     setFavorites(favoritesInStorage)
   }
 
-  // const matchFavsWithAllData = () => {
-  //   return allBreweries.map((brewery) => {
-  //     return favorites.forEach((favorite) => {
-  //       if (favorite.id === brewery.id) {
-  //         brewery.isFavorited = true
-  //       }
-  //     })
-  //   })
-  // }
-
   useEffect(() => {
     getAllBreweries()
     // matchFavsWithAllData()
