@@ -2,7 +2,7 @@
 
 ### Deployment Link: 
 
-[The Detroit Brewery Atlas](the-detroit-brewery-atlas.surge.sh)
+[The Detroit Brewery Atlas](https://the-detroit-brewery-atlas.surge.sh/)
 
 ### Abstract:
 
