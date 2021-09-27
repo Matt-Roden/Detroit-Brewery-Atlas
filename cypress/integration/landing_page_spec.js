@@ -10,7 +10,7 @@ describe('Landing page features and functionality', () => {
   });
 
   it('Should render a welcome message and a button', () => {
-    cy.get('h1.welcome-message').contains('Welcome to Detroit - Now let\'s drink')
+    cy.get('h1.welcome-message').contains('Welcome to Detroit - Let\'s find you a beer')
     cy.get('div.btn').find('span.btn-text').contains('enter')
   });
 
