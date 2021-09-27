@@ -27,7 +27,7 @@ const BreweryCard = ({ brewery, updateFavorites }) => {
           <p className='zipcode text'>{brewery.postal_code}</p>
         </div>
         <h3 className='phone-number text'>{brewery.phone}</h3>
-        <a className='website text' href={brewery.website_url}>Website</a>
+        <a className='website text' href={brewery.website_url} target='_blank' rel="noreferrer">Website</a>
       </div>
     </article>
   )
