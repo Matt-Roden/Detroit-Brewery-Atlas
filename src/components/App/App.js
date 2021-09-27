@@ -80,15 +80,10 @@ const App = () => {
 
   useEffect(() => {
     getAllBreweries()
-    // matchFavsWithAllData()
   }, [])
 
   useEffect(() => {
     getFavoritesFromStorage()
-  }, [])
-
-  useEffect(() => {
-
   }, [])
 
   return (
