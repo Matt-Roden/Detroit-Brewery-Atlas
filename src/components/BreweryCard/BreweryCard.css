@@ -1,13 +1,14 @@
 .brewery-card-container {
   height: 300px;
   width: 250px;
-  margin: 5px;
-  border: solid black 3px;
+  margin: 8px;
+  /* border: solid black 3px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(249,248,248,0.8);
+  border-radius: 11px;
 }
 
 .image-fav-container {
@@ -59,10 +60,16 @@
 }
 
 .name {
-  font-size: 16px;
+  align-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: solid black 2px;
 }
 .website {
+  margin-top: 0;
+  color: black;
   font-weight: bold;
+  border-bottom: solid black 2px;
 }
 
 .address-container {
@@ -71,4 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(234,236,240,0.8);
+  width: 65%;
+  padding: 3px;
 }
