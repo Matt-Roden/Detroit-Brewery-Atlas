@@ -1,4 +1,4 @@
-# The Detroit Brewery Atlas
+<h1 align='center'>The Detroit Brewery Atlas</h1>
 
 ### Deployment Link: 
 
