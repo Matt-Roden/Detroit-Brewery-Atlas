@@ -10,6 +10,8 @@ The Detroit Brewery Atlas is a quick and easy way to find and favorite breweries
 
 This application was designed with responsiveness and user empathy in mind. It is quick and easy for users off all technology proficiencies and confidence to find and use the information. It is completely Desktop, Tablet, and Mobile Responsive. 
 
+This project was built as a student project for The Turing School of Software & Design. The project spec can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
+
 ### Tech Used:
 
 - React
