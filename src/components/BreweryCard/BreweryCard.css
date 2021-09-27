@@ -36,6 +36,11 @@
 
 .favoriting-image {
   height: 30px;
+  transition: transform 350ms;
+}
+
+.favoriting-image:hover {
+  transform: scale(1.09)
 }
 
 .info-container {
