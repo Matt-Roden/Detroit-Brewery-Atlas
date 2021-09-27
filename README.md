@@ -6,7 +6,7 @@
 
 ### Abstract:
 
-The Detroit Brewery Atlas is a quick and easy way to find and favorite breweries within the city of Detroit, Michigan. This application is meant for first time travelers to Detroit, who are also big time beer lovers. The application allows for a user to quickly skim through a list of all the breweries, find quick and easy information including the name, phone number, website, and address, as well as allow the user to favorite breweries. Favorited breweries can be viewed on the _Favorites_ page and will persist for the user even after leaving the site. So, the next time a user visits the site, all of their favorites will still be there until they unfavorite a brewery!
+The Detroit Brewery Atlas is a quick and easy way to find and favorite breweries within the city of Detroit, Michigan. This application is meant for first time travelers to Detroit, who are also big time beer lovers. The application allows for a user to quickly skim through a list of all the breweries, find quick and easy information including the name, phone number, website, and address, as well as allow the user to favorite breweries. Favorited breweries can be viewed on the _Favorites_ page and will persist for the user even after leaving the site. So, the next time a user visits the site, all of their favorites will still be there!
 
 This application was designed with responsiveness and user empathy in mind. It is quick and easy for users off all technology proficiencies and confidence to find and use the information. It is completely Desktop, Tablet, and Mobile Responsive. 
 
