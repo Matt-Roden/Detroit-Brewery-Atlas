@@ -19,13 +19,30 @@
 }
 
 .list-item-link {
-  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+  transition: transform 425ms;
+}
+
+.list-item-link:hover {
+  transform: scale(1.11);
 }
 
 .d-logo {
   width: 30px;
   height: 40px;
   margin-right: 25px;
+  transition: transform 425ms;
+}
+
+.d-logo:hover {
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 875px) {
+  .link-list {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -1,11 +1,11 @@
 .App {
   height: 100vh;
-  /* width: 100vw; */
   background-image: url('../../images/rencen_bw_ls.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -13,6 +13,9 @@ a {
   color: white;
 }
 
+.offerings-message {
+  color: white;
+}
 
 @media screen and (max-width: 425px) {
   .App {
@@ -24,4 +27,8 @@ a {
     color: black;
   }
 
+  .offerings-message {
+    color: black;
+    font-size: 20px;
+  }
 }

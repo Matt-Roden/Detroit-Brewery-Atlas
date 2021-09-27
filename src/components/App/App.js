@@ -78,27 +78,12 @@ const App = () => {
     setFavorites(favoritesInStorage)
   }
 
-  // const matchFavsWithAllData = () => {
-  //   return allBreweries.map((brewery) => {
-  //     return favorites.forEach((favorite) => {
-  //       if (favorite.id === brewery.id) {
-  //         brewery.isFavorited = true
-  //       }
-  //     })
-  //   })
-  // }
-
   useEffect(() => {
     getAllBreweries()
-    // matchFavsWithAllData()
   }, [])
 
   useEffect(() => {
     getFavoritesFromStorage()
-  }, [])
-
-  useEffect(() => {
-
   }, [])
 
   return (
@@ -114,6 +99,7 @@ const App = () => {
         render={() =>
           <>
             <Header />
+            <h1 className='offerings-message'>All Breweries</h1>
             <AllBreweries allBreweriesData={allBreweries} updateFavorites={updateFavorites} favoritesList={favorites}/>
           </>
         }

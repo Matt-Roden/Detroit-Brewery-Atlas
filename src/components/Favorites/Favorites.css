@@ -1,6 +1,7 @@
 .favorites-container {
   background-color: rgba(44,44,46,0.8);
   margin-top: 100px;
+  margin-bottom: 50px;
   width: 85%;
   height: 750px;
   display: flex;
@@ -8,4 +9,16 @@
   justify-content: space-around;
   padding: 10px;
   overflow-y: scroll;
+}
+
+@media screen and (max-width: 425px) {
+  .favorites-container {
+    height: 320px;
+    margin-top: 65px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: none;
+    overflow-x: scroll;
+  }
 }
