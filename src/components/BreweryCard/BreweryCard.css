@@ -29,6 +29,7 @@
 }
 
 .fav-icon-wrapper {
+  display: flex;
   position: absolute;
   background-color: rgba(249,248,248,0.8);
   right: 0;
