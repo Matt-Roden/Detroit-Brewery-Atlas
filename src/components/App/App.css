@@ -14,6 +14,10 @@ a {
   color: white;
 }
 
+.offerings-message {
+  color: white;
+}
+
 
 @media screen and (max-width: 425px) {
   .App {
@@ -23,6 +27,11 @@ a {
 
   a {
     color: black;
+  }
+
+  .offerings-message {
+    color: black;
+    font-size: 20px;
   }
 
 }

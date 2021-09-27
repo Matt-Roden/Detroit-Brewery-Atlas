@@ -5,7 +5,7 @@ import './LandingPage.css'
 const LandingPage = () => {
   return (
     <section className='landing-page-container'>
-      <h1 className='welcome-message'>Welcome to Detroit - Now let's drink</h1>
+      <h1 className='welcome-message'>Welcome to Detroit - Let's find you a beer</h1>
 
       <Link to='/home' className='link'>
         <div className="btn">
