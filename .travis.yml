@@ -13,12 +13,14 @@ notifications:
 
 cache:
   # cache both npm modules and Cypress binary
+  npm: true
   directories:
     - ~/.npm
+    - ./node_modules
     - ~/.cache
   # install dependencies and check that Cypress can run
   override:
-    - npm i
+    - npm ci
     - npm run cy:verify
 
 script:
