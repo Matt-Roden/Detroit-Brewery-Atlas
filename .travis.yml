@@ -1,30 +1,25 @@
 language: node_js
 
 node_js:
-    - "node"
+  - node
+
+notifications:
+  email: false
 
 addons:
   apt:
     packages:
-    - libgconf-2-4
-
-notifications:
-     email: false
+      - libgconf-2-4
 
 cache:
-  # cache both npm modules and Cypress binary
-  npm: true
   directories:
     - ~/.npm
-    - ./node_modules
     - ~/.cache
-  # install dependencies and check that Cypress can run
   override:
     - npm ci
     - npm run cy:verify
 
-install:
-  - npm ci
-
 script:
+  - npm start &
   - npm run cy:run
+  - kill $(jobs -p) || true
