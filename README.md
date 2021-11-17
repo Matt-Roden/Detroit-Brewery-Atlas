@@ -12,9 +12,9 @@ This application consumes the [Open Breweries Data Base API](https://www.openbre
 
 Detroit and it's citizens have their own unique perspective. This application's design was inpsired by color palettes commonly found around the city, which many people describe as 'gritty'. I chose to incorporate images and colors that reflect this esthetic in order to subtly inject some of the essence of the city and it's culture into the application. 
 
-This application was designed with responsiveness and user empathy in mind. It was designed with efficiency and ease-of-use for users of all different levels of technology proficiencies and confidence, to quickly find and use the information on the app. It is completely Desktop, Tablet, and Mobile Responsive, and was built using a Mobile-First approach.
+This application was designed with responsiveness and user empathy in mind. It was built for efficiency and ease-of-use for users of all different levels of technology proficiencies and confidence, to quickly find and use the information on the app. It is completely Desktop, Tablet, and Mobile Responsive, and was constructed using a Mobile-First approach.
 
-This project was built as a Mod 3 student project for The Turing School of Software & Design. The project spec can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
+This project was student project for The Turing School of Software & Design. The project spec can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 ### Tech Used:
 
